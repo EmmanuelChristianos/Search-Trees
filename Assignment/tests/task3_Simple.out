@@ -1,0 +1,12 @@
+
+=================================================================
+==27957==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x4c6173 in malloc (/tmp_amd/cage/export/cage/1/z5206513/Documents/cs2521/Assignment/task3+0x4c6173)
+    #1 0x4ffcda in newThreadTreeNode /import/cage/1/z5206513/Documents/cs2521/Assignment/ThreadTree.c:178:16
+    #2 0x4ff6f5 in ThreadTreeBuild /import/cage/1/z5206513/Documents/cs2521/Assignment/ThreadTree.c:103:17
+    #3 0x4f555c in main /import/cage/1/z5206513/Documents/cs2521/Assignment/task3.c:36:23
+    #4 0x7ff5a2a0109a in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2409a)
+
+SUMMARY: AddressSanitizer: 24 byte(s) leaked in 1 allocation(s).
